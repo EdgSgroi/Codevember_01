@@ -75,8 +75,12 @@ class ViewController: UIViewController {
         myStartAnimation.fromValue = 0.0
         myStartAnimation.toValue = 1.0
 
+        let rotationAnimation = CABasicAnimation(keyPath: "transform.rotation.z")
+        rotationAnimation.fromValue = 0.0
+        rotationAnimation.toValue = 1.0
+
         let animationGroup = CAAnimationGroup()
-        animationGroup.animations = [myStartAnimation, myEndAnimation]
+        animationGroup.animations = [myStartAnimation, myEndAnimation, rotationAnimation]
         animationGroup.duration = 3
         animationGroup.repeatDuration = .infinity
         
@@ -117,8 +121,12 @@ class ViewController: UIViewController {
         myStartAnimation.fromValue = 0.0
         myStartAnimation.toValue = 1.0
 
+        let rotationAnimation = CABasicAnimation(keyPath: "transform.rotation.z")
+        rotationAnimation.fromValue = 0.0
+        rotationAnimation.toValue = 1.0
+
         let animationGroup = CAAnimationGroup()
-        animationGroup.animations = [myStartAnimation, myEndAnimation]
+        animationGroup.animations = [myStartAnimation, myEndAnimation, rotationAnimation]
         animationGroup.duration = 3
         animationGroup.repeatDuration = .infinity
         
